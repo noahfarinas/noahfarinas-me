@@ -5,25 +5,25 @@ const PROJECTS = [
     name: "Social Links",
     link: "https://noahfarinas.github.io/",
     type: "HTML & CSS",
-    img: "./photos/social.png",
+    img: "./social.png",
   },
   {
     name: "Rad Power Bikes",
     link: "https://noahfarinas.github.io/top-rad-bikes/",
     type: "ReactJS",
-    img: "./photos/rad.png",
+    img: "./rad.png",
   },
   {
     name: "Stretching Search",
     link: "https://noahfarinas.github.io/stretching/",
     type: "ReactJS",
-    img: "./photos/stretch.png",
+    img: "./stretch.png",
   },
   {
     name: "Resume",
     link: "https://noahfarinas.github.io/noahfarinas-react-resume/",
     type: "ReactJS",
-    img: "./photos/resume.png",
+    img: "./resume.png",
   },
 ];
 
