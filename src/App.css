@@ -1,38 +1,268 @@
-.App {
-  text-align: center;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #ebf5ed;
+  width: 100%;
+  overflow-x: hidden;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header {
+  width: 100%;
+  background: black;
+  height: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+  color: white;
+}
+.navbar h1 {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-family: Helvetica;
+  font-weight: 700;
+}
+.navbar h3 {
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica;
+  font-weight: 200;
+}
+
+.name {
+  display: flex;
+  flex-direction: row;
+}
+
+.name h3 {
+  margin-top: 38px;
+  display: inline-block;
+  text-align: center;
+  padding: 5px;
+  font-weight: 100;
+  font-size: 18 px;
+}
+.name img {
+  height: auto;
+  width: 10%;
+  margin: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  margin: 5px;
+}
+
+.links {
+  display: flex;
+  align-items: flex-start;
+  margin-top: 30px;
+}
+
+ion-icon {
+  font-size: 34px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.photo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fffaee;
+  padding: 50px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.photo img {
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.photo h1 {
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica;
+  font-weight: 700;
+  font-size: 38px;
+  margin-bottom: 0;
+}
+.photo h3 {
+  display: flex;
+  justify-content: center;
+  font-family: Helvetica;
+  font-weight: 200;
+  margin: 10px;
+  font-family: Courier New;
+}
+button {
+  margin: auto;
+  height: 30px;
+  width: 150px;
+  border-radius: 20px;
+  border: 2px solid black;
+  background-color: #fffaee;
+}
+
+.skills {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.goals {
+  background-color: #fffaee;
+  float: left;
+  width: 300px;
+  height: 460px;
+  text-align: left;
+  font-family: Courier New;
+  font-size: 14px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.goals a {
+  width: 200px;
+  background-color: rgb(243, 96, 23);
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+  margin: 10px;
+  text-decoration: none;
+  
+ 
+}
+
+p {
+  line-height: 25px;
+}
+
+b {
+  background-color: #d5cbb3;
+}
+
+.languages {
+  display: flex;
+  justify-content: left;
+  width: 248px;
+  height: 140px;
+  background-color: #ebf5ed;
+  margin: auto;
+  border: 1px solid rgb(170, 164, 164);
+  border-bottom: none;
+  padding-left: 50px;
+}
+
+.skillsContainer h3 {
+  font-weight: 700;
+}
+
+.libraries {
+  display: flex;
+  justify-content: left;
+  width: 250px;
+  height: 120px;
+  background-color: #000000;
+  color: white;
+  margin: auto;
+  padding-left: 50px;
+}
+
+.libraries h3 {
+  font-weight: 700;
+}
+
+.tools {
+  display: flex;
+  justify-content: left;
+  width: 250px;
+  height: 300px;
+  background-color: #ffffff;
+  margin: auto;
+  padding-left: 50px;
+}
+
+.tools h3 {
+  font-weight: 700;
+}
+
+ul,
+li {
+  list-style-type: none;
+  text-align: left;
+  font-family: Courier New;
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+}
+
+.projectView {
+  background-color: #fffaee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  text-decoration: none;
+}
+
+.projectView ul,
+li {
+  margin: 10px;
+  align-items: left;
+  margin-left: 0;
+}
+
+.projectView a {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(243, 96, 23);
+  padding: 3px;
+}
+
+.projectView img {
+  width: 350px;
+  height: auto;
+}
+
+@media screen and (max-width: 740px) {
+
+  .skills,
+  .photo,
+  .name,
+  .body
+  {
+    display: block;
+    overflow-x: hidden;
+    margin: auto;
   }
-  to {
-    transform: rotate(360deg);
+
+  .photo h3 {
+    text-align: center;
+  }
+
+  .projectView {
+    display: block;
+    overflow-x: hidden;
+    margin: auto;
+  }
+  .projectView img { 
+    width: 100%;
+  }
+
+  .navbarMenu {
+    display: none;
+  }
+  .name img {
+    height: auto;
+    width: 60%;
   }
 }
