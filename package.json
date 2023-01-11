@@ -1,5 +1,6 @@
 {
   "name": "noah-farinas",
+  "homepage": "http://noahfarinas.github.io/noahfarinas-me",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -36,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0"
   }
 }
