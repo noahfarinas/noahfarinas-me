@@ -1,4 +1,4 @@
-import React from "react";
+import { React,useEffect, useRef } from "react";
 
 const SOCIALS = [
   {
@@ -20,15 +20,15 @@ const SOCIALS = [
 const NAV = [
   {
     name: '"HOME"',
-    id: "photo"
+    id: "photo",
   },
   {
     name: '"ABOUT ME"',
-    id: "skills"
+    id: "skills",
   },
   {
     name: '"PROJECTS"',
-    id: "projectView"
+    id: "projectView",
   },
   {
     name: '"CONTACT"',
@@ -36,22 +36,32 @@ const NAV = [
 ];
 
 const Navbar = () => {
+  const headerRef = useRef(null);
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const handleScroll = () => {
+    const scrollPos = window.pageYOffset;
+    headerRef.current.style.opacity = 1 - scrollPos / 300;
+  };
   return (
-    <header>
+    <header ref={headerRef}>
       <div className="navbar">
         <div className="name">
           <img src="./jordan.gif" alt="shoes" />
           {/* <div className="navbarMenu">
-            {NAV.map((item) => (
-              <h3>{item.name}</h3>
-            ))}
-          </div> */}
+              {NAV.map((item) => (
+                <h3>{item.name}</h3>
+              ))}
+            </div> */}
         </div>
         <div className="links">
           {SOCIALS.map((item) => (
             <a href={item.link} target="_blank">
               <ion-icon name={item.icon}></ion-icon>
-              
             </a>
           ))}
         </div>

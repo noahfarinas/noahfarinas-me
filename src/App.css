@@ -10,6 +10,10 @@ header {
   width: 100%;
   background: black;
   height: 150px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
 
 .navbar {
@@ -19,6 +23,7 @@ header {
   margin-left: 50px;
   margin-right: 50px;
   color: white;
+ 
 }
 .navbar h1 {
   display: flex;
@@ -138,8 +143,6 @@ button {
   padding: 10px;
   margin: 10px;
   text-decoration: none;
-  
- 
 }
 
 p {
@@ -234,12 +237,10 @@ li {
 }
 
 @media screen and (max-width: 740px) {
-
   .skills,
   .photo,
   .name,
-  .body
-  {
+  .body {
     display: block;
     overflow-x: hidden;
     margin: auto;
@@ -254,7 +255,7 @@ li {
     overflow-x: hidden;
     margin: auto;
   }
-  .projectView img { 
+  .projectView img {
     width: 100%;
   }
 
