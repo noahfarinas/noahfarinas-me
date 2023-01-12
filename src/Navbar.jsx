@@ -41,11 +41,11 @@ const Navbar = () => {
       <div className="navbar">
         <div className="name">
           <img src="./jordan.gif" alt="shoes" />
-          <div className="navbarMenu">
+          {/* <div className="navbarMenu">
             {NAV.map((item) => (
               <h3>{item.name}</h3>
             ))}
-          </div>
+          </div> */}
         </div>
         <div className="links">
           {SOCIALS.map((item) => (
