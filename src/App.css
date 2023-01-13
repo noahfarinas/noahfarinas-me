@@ -20,6 +20,8 @@ h3 a {
   font-family: Helvetica;
   font-weight: 200;
   color: white;
+  display: inline-block;
+  text-align: center;
 }
 
 .navbar {
@@ -50,7 +52,7 @@ h3 a {
 }
 
 .name h3 {
-  margin-top: 38px;
+  margin-top: 25px;
   display: inline-block;
   text-align: center;
   padding: 5px;
