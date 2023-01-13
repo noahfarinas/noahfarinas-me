@@ -61,8 +61,13 @@ h3 a {
 }
 .name a {
   height: auto;
-  width: 40px;
+  width: 600px;
   margin: 10px;
+}
+
+.name img {
+  height: auto;
+  width: 15%;
 }
 
 .navbar a {

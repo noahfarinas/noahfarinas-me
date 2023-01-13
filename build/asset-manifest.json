@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/noahfarinas-me/static/css/main.bf610ba7.css",
+    "main.css": "/noahfarinas-me/static/css/main.67e343ee.css",
     "main.js": "/noahfarinas-me/static/js/main.c65b6269.js",
     "index.html": "/noahfarinas-me/index.html",
-    "main.bf610ba7.css.map": "/noahfarinas-me/static/css/main.bf610ba7.css.map",
+    "main.67e343ee.css.map": "/noahfarinas-me/static/css/main.67e343ee.css.map",
     "main.c65b6269.js.map": "/noahfarinas-me/static/js/main.c65b6269.js.map"
   },
   "entrypoints": [
-    "static/css/main.bf610ba7.css",
+    "static/css/main.67e343ee.css",
     "static/js/main.c65b6269.js"
   ]
 }
