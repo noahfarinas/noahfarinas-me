@@ -3,17 +3,18 @@ body {
   padding: 0;
   background-color: #ebf5ed;
   width: 100%;
-  overflow-x: hidden;
+  overflow-x: visible;
 }
 
 header {
   width: 100%;
-  background: black;
+  background: linear-gradient(to bottom, #fffaee ,#f7f0e3 );
   height: 100px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 1;
+  
 }
 
 h3 a {
@@ -24,15 +25,6 @@ h3 a {
   text-align: center;
 }
 
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
-  margin-left: 50px;
-  margin-right: 50px;
-  color: white;
- 
-}
 .navbar h1 {
   display: flex;
   justify-content: center;
@@ -59,11 +51,6 @@ h3 a {
   font-weight: 100;
   font-size: 18 px;
 }
-.name a {
-  height: auto;
-  width: 600px;
-  margin: 10px;
-}
 
 .name img {
   height: auto;
@@ -79,11 +66,25 @@ h3 a {
   display: flex;
   align-items: flex-start;
   margin-top: 20px;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
 }
+
+.footerLinks {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top: 20px;
+  padding: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
 
 ion-icon {
   font-size: 34px;
-  color: white;
+  color: black;
 }
 
 .photo {
@@ -93,7 +94,7 @@ ion-icon {
   align-items: center;
   background-color: #fffaee;
   padding: 50px;
-  height: 900px;
+  height: 100vh;
 }
 
 .photo img {
@@ -133,7 +134,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 900px;
+  height: 100vh;
 }
 
 .goals {
@@ -231,7 +232,7 @@ li {
   align-items: center;
   padding: 50px;
   text-decoration: none;
-  height: 900px;
+  height: 100vh;
 }
 
 .projectView ul,
@@ -251,6 +252,15 @@ li {
 .projectView img {
   width: 350px;
   height: auto;
+}
+
+footer {
+  width: 100%;
+  background: linear-gradient(to bottom,#f7f0e3, #fffaee  );
+  height: 100px;
+  position: fixed;
+  bottom: 0;
+  z-index: 1;
 }
 
 @media screen and (max-width: 740px) {
@@ -283,4 +293,5 @@ li {
     height: auto;
     width: 60%;
   }
+
 }

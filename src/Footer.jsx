@@ -1,4 +1,5 @@
-import { React,useEffect, useRef } from "react";
+import { React, useEffect, useRef } from "react";
+
 
 const SOCIALS = [
   {
@@ -32,8 +33,8 @@ const NAV = [
   },
 ];
 
-const Navbar = () => {
-  const headerRef = useRef(null);
+const Footer = () => {
+  const footerRef = useRef(null);
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
@@ -42,20 +43,21 @@ const Navbar = () => {
   }, []);
   const handleScroll = () => {
     const scrollPos = window.pageYOffset;
-    headerRef.current.style.opacity = 1 - (scrollPos / 300);
+    footerRef.current.style.opacity = (scrollPos / 300) - 6.5;
   };
   return (
-    <header ref={headerRef} >
-        <div className="links">
+    <footer ref={footerRef}>
+      <div className="footer">
+        <div className="footerLinks">
           {SOCIALS.map((item) => (
             <a href={item.link} target="_blank">
               <ion-icon name={item.icon}></ion-icon>
             </a>
           ))}
         </div>
-    </header>
+      </div>
+    </footer>
   );
 };
 
-
-export default Navbar;
+export default Footer;

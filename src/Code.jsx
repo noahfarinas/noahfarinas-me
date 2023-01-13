@@ -29,7 +29,7 @@ const PROJECTS = [
 
 const Code = () => {
   return (
-    <div className="projectView">
+    <div id="projectView" className="projectView">
       <>
         {PROJECTS.map((item) => (
           <ul>

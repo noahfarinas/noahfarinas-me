@@ -18,7 +18,7 @@ const TOOLS = [
 
 const Skills = () => {
   return (
-    <div className="skills">
+    <div id="skills" className="skills">
       <div className="goals">
         <h3>"ABOUT ME"</h3>
         <p><b>I value being a self-starter to achieve the goals I have set for myself.</b>  My interest for a career in nursing started to disintegrate as I became
