@@ -16,6 +16,12 @@ header {
   z-index: 1;
 }
 
+h3 a {
+  font-family: Helvetica;
+  font-weight: 200;
+  color: white;
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -76,9 +82,11 @@ ion-icon {
 .photo {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   background-color: #fffaee;
   padding: 50px;
+  height: 900px;
 }
 
 .photo img {
@@ -118,6 +126,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 900px;
 }
 
 .goals {
@@ -215,6 +224,7 @@ li {
   align-items: center;
   padding: 50px;
   text-decoration: none;
+  height: 900px;
 }
 
 .projectView ul,
