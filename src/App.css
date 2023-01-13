@@ -61,7 +61,7 @@ h3 a {
 }
 .name img {
   height: auto;
-  width: 10%;
+  width: 20%;
   margin: 10px;
 }
 
@@ -93,8 +93,8 @@ ion-icon {
 
 .photo img {
   border-radius: 50%;
-  width: 250px;
-  height: 250px;
+  width: 450px;
+  height: 450px;
   object-fit: cover;
 }
 
