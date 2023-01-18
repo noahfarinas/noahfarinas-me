@@ -296,4 +296,9 @@ footer {
     width: 60%;
   }
 
+  .photo img {
+    width: 250px;
+    height: 250px;
+  }
+
 }
