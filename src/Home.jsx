@@ -2,7 +2,7 @@ import React from "react";
 
 const Home = () => {
   return (
-      <div className="photo">
+      <div id="photo "className="photo">
         <img src="./photos/noah.JPG" alt="Me" />
         <h1>NOAH FARINAS</h1>
         <h3>Front-End Software Engineer</h3>
